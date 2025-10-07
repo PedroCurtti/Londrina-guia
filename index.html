@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Londrina — Guia da Cidade</title>
+  <meta name="description" content=" Página sobre a cidade de Londrina com seções de Sobre, Culturas e Lugares para Visitar." />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- =====================================
+       CABEÇALHO + MENU
+       Dica: atualize o título e, se quiser, troque as cores em :root
+  ====================================== -->
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Londrina • PR</span>
+      </div>
+
+      <button class="menu-btn" aria-label="Abrir menu" onclick="document.querySelector('nav ul').classList.toggle('open')">☰ Menu</button>
+
+      <nav aria-label="principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#culturas">Culturas</a></li>
+          <li><a href="#lugares">Lugares para Visitar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================
+       HERO / CHAMADA INICIAL
+  ====================================== -->
+  <section class="hero wrap" id="inicio">
+    <div class="card">
+      <h1>Bem-vindo(a) a Londrina</h1>
+      <p class="lead"></p>
+      <div style="display:flex; gap:.6rem; flex-wrap: wrap;">
+        <a class="chip" href="#sobre">Sobre</a>
+        <a class="chip" href="#culturas">Cultura</a>
+        <a class="chip" href="#lugares">Locais para visitar</a>
+      </div>
+    </div>
+    <div class="photo" title="Imagem de capa "></div>
+  </section>
+
+  <section id="sobre" class="wrap">
+    <h2 class="section-title">Sobre</h2>
+
+    <div class="sobre">
+      <div class="box">
+        
+        <p><strong>Resumo:</strong>  Londrina é um município do norte do Paraná, conhecido como a “Capital do Café” em seu período de expansão.</p>
+        <p><strong>História:</strong> Fundada oficialmente em 1934, a cidade recebeu esse nome em homenagem a Londres, na Inglaterra, já que a colonização da região foi realizada pela Companhia de Terras Norte do Paraná, de origem britânica.</p>
+        
+      </div>
+
+      <aside class="info box">
+        <div><strong>População</strong><br> 581.382</div>
+        <div><strong>Clima</strong><br> subtropical / temperaturas médias</div>
+        <div><strong>Fundação</strong><br>10/12/1934</div>
+        <div><strong>Apelidos</strong><br> Capital do Café, Pequena Londres </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- =====================================
+       CULTURAS
+  ====================================== -->
+  <section id="culturas" class="wrap">
+    <h2 class="section-title">Culturas</h2>
+  
+    <div class="grid-3">
+      <!-- Cartão 1 -->
+      <article class="card">
+        <div class="media" style="background:url('./img/comida.jpg') center/cover;" aria-label="Foto temática de gastronomia"></div>
+        <div class="body">
+          <span class="chip">Gastronomia</span>
+          <h3 style="margin:.5rem 0 0">Sabores de Londrina</h3>
+          <ul style="color:var(--muted)">
+            <li>O Casarão</li>
+            <li>Madame Brulee</li>
+            <li>Boussolé Rooftop</li>
+            <li>Bangkok Garden</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Cartão 2 -->
+      <article class="card">
+        <div class="media" style="background:url('./img/festival.jpg') center/cover;" aria-label="Foto temática de festival"></div>
+        <div class="body">
+          <span class="chip">Eventos</span>
+          <h3 style="margin:.5rem 0 0"> Festas & Festivais</h3>
+          <ul style="color:var(--muted)">
+            <li>Londrina Matsuri</li>
+            <li>Tropicadelia</li>
+            <li>Expo Londrina</li>
+            <li>Expo Japão</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Cartão 3 -->
+      <article class="card">
+        <div class="media" style="background:url('./img/museu.jpg') center/cover;" aria-label="Foto temática de museu/arte"></div>
+        <div class="body">
+          <span class="chip">Arte & Espaços</span>
+          <h3 style="margin:.5rem 0 0"> Museus e Centros Culturais</h3>
+          <ul style="color:var(--muted)">
+            <li>Teatro Marista</li>
+            <li>Espaço Villa Rica</li>
+            <li>Concha Acústica de Londrina</li>
+            <li>Museu Histórico de Londrina</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================
+       LUGARES PARA VISITAR
+  ====================================== -->
+  <section id="lugares" class="wrap places">
+    <h2 class="section-title">Lugares para Visitar</h2>
+    
+    <div class="grid">
+      <!-- Lugar 1 -->
+      <article class="card place-card">
+        <div class="media" style="background:url('./img/igapó.jpg') center/cover" aria-label="Parque"></div>
+        <div class="body">
+          <h3 style="margin:.4rem 0 0"> Lago Igapó</h3>
+          <p style="color:var(--muted)">Espaco amplo, pista interna e externa para correr ou caminhar. Nos fins de semana fecham as ruas envolta do lago para andar de bicicleta e patins.</p>
+        </div>
+      </article>
+
+      <!-- Lugar 2 -->
+      <article class="card place-card">
+        <div class="media" style="background:url('./img/arthur-thomas.jpg') center/cover" aria-label="Centro urbano"></div>
+        <div class="body">
+          <h3 style="margin:.4rem 0 0">Parque Arthur Thomas</h3>
+          <p style="color:var(--muted)">Um dos parques mais antigos de Londrina, fica há poucos quilômetros do centro da cidade. A entrada é gratuita e tem estacionamento para carros e motocicletas.</p>
+          
+        </div>
+      </article>
+
+      <!-- Lugar 3 -->
+      <article class="card place-card">
+        <div class="media" style="background:url('./img/catedral1.jpg') center/cover" aria-label="Mercado/feira"></div>
+        <div class="body">
+          <h3 style="margin:.4rem 0 0">Catedral de Londrina</h3>
+          <p style="color:var(--muted)">A Catedral Metropolitana de Londrina, dedicada ao Sagrado Coração de Jesus, é um templo que pertence à Igreja Católica.</p>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =====================================
+       RODAPÉ
+  ====================================== -->
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> • Guia de Londrina </div>
+      <div style="margin-top:.4rem">Feito com ♥ </div>
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fecha o menu ao clicar em um item (mobile)
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', () => {
+        const list = document.querySelector('nav ul');
+        if (list.classList.contains('open')) list.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
